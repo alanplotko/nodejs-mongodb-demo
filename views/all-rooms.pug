@@ -1,0 +1,9 @@
+.container
+    h1 Available Rooms
+    if rooms
+        ul
+        for room in rooms
+            li
+                a(href='/rooms/' + room.name)= room.name
+    else
+        p: em No rooms available

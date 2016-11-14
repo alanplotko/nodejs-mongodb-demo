@@ -1,0 +1,6 @@
+.container
+    h1 Welcome
+    if name
+        p= 'Hello ' + locals.toProperCase(name) + '!'
+    else
+        p Hello world!
